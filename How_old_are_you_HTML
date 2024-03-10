@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title> How old are you JS</title>
 
+<script type="text/javascript">
+   
+var age = prompt("How old are you");
+
+if (age <= 0) { 
+            alert("Введите корректный возраст"); 
+}
+else if (age === 1 && age !== 11 || age % 10 === 1 && age !== 11) {
+        alert(age + " " + "рік");  
+}
+else if (age % 10 === 2 && age !== 12 || age % 10 === 3 && age !== 13 || age % 10 === 4 && age !== 14) {
+        alert(age + " " + "роки");
+}
+else if (age === 11 || age === 12 || age === 13 || age === 14 || age % 10 === 5 || age % 10 === 6 || age % 10 === 7 || age % 10 === 8 || age % 10 === 9 || age % 10 === 0 && age !== 0)
+{
+        alert(age + " " + "років");
+}
+
+else {
+        alert("Введите корректрый возраст");
+}
+</script>
+</head>
+
+<body>
+    <p class="p1">&lt;!DOCTYPE html&gt;</p>
+    <p class="p1">&lt;html&gt;</p>
+    <p class="p2"><span class="Apple-tab-span"> </span></p>
+</body>
+
+</html>
