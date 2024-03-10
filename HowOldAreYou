@@ -1,0 +1,19 @@
+var age = 15;
+
+if (age <= 0) { 
+            console.log("Введите корректный возраст"); 
+}
+else if (age === 1 && age !== 11 || age % 10 === 1 && age !== 11) {
+        console.log(age + " " + "рік");  
+}
+else if (age % 10 === 2 && age !== 12 || age % 10 === 3 && age !== 13 || age % 10 === 4 && age !== 14) {
+        console.log(age + " " + "роки");
+}
+else if (age === 11 || age === 12 || age === 13 || age === 14 || age % 10 === 5 || age % 10 === 6 || age % 10 === 7 || age % 10 === 8 || age % 10 === 9 || age % 10 === 0 && age !== 0)
+{
+        console.log(age + " " + "років");
+}
+
+else {
+        console.log("Введите корректрый возраст");
+}
