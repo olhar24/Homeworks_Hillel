@@ -1,0 +1,22 @@
+var team = {
+    name: "ScrumTeam",
+    members: {
+        developer: "Dev1",
+        QA: "Tester",
+        PM: "Project manager"
+    },
+membersInfo: function() { 
+        return "Team members: " + team.members.developer + ", " + team.members.QA + ", " +  team.members.PM;
+    },
+    
+UpdatedMembersInfo: function() {
+return "Updated Team members: " + team.members.developer + ", " + team.members.QA + ", " +  team.members.PM + ", " + team.members.SM;
+}
+}
+team.members.SM = "Scrum Master";
+team.name = 'Agile team';
+
+
+console.log(team.membersInfo());
+console.log(team.UpdatedMembersInfo());
+console.log('New team name: ' + team.name);
