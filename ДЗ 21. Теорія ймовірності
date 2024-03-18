@@ -1,0 +1,33 @@
+var random;
+var evenCount = 0;
+var oddCount = 0;
+var count = 10;
+var evenPercentage;
+var oddPercentage;
+function random(min, max) {
+for (i = 0; i < 10; i++) {
+random = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(random)
+if (random % 2 === 0) {
+evenCount++;
+} else {
+oddCount++;
+}
+}
+}
+random(100, 1000)
+
+var evenPercentage = (evenCount / (evenCount + oddCount)) * 100;
+var oddPercentage = (oddCount / (evenCount + oddCount)) * 100;
+console.log("співвідношення парних: " + evenPercentage);
+console.log("співвідношення непарних: " + oddPercentage);
+
+/* Умова була така: Опис ДЗ: Перевірка теорії ймовірності. Напишіть функцію яка буде генерувати певну кількість випадкових чисел в діапазоні від 100 до 1000 включно. Порахувати кількість парних та непарних серед них. Обчислити відсоткове співвідношення - чи буде воно близьке до 50%50? Приклад функції checkProbabilityTheory(count). Парметр count буде вказувати скільки разів буде генеруватися випадкове число.
+
+Умови виконання ДЗ
+
+Функція виводить інформацію
+Кількість згенерованих чисел: кількість чисел
+Парних чисел: кількість парних чисел
+Не парних чисел: кількість не парних чисел
+Відсоток парних до не парних */
